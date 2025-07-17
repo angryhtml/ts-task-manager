@@ -1,10 +1,10 @@
-interface Task {
+export interface Task {
     id: number;
     title: string;
     completed: boolean;
 }
 
-class TaskManager<T extends Task> {
+ export class TaskManager<T extends Task> {
     private tasks: T[] = [];
 
     addTask(task: T): void {
